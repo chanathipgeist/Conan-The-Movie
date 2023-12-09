@@ -13,10 +13,7 @@ defineProps({
 
 <template>
   <h2>{{ title }}</h2>
-  <ol>
-    <li v-for="(doc, index) in data" :key="doc.id">{{ doc.name }} 
-    </li>
-  </ol>
+  <div>{{ data }}</div>
 </template>
 
 <style scoped></style>
