@@ -2,15 +2,16 @@
   "name": "firebase-assignment",
   "version": "0.0.0",
   "private": true,
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue-router": "^4.2.5",
-    "vue": "^3.3.10"
+    "firebase": "^10.7.1",
+    "firebase-admin": "^12.0.0",
+    "vue": "^3.3.10",
+    "vue-router": "^4.2.5"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.5.1",
