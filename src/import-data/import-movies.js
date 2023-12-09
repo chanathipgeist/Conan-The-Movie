@@ -18,7 +18,9 @@ const movies = [
     "category": "Electronics",
     "picture": "https://firebasestorage.googleapis.com/v0/b/project-conan-95b4a.appspot.com/o/shy.png?alt=media&token=5f868a45-f146-45a9-949a-b4626eab3677",
     "release_date": new Date("2023-12-18T00:00:00Z"),
-    "charaters": ["john_doe", "rating"]
+    "charaters": ["john_doe", "rating"],
+    "totalCharacter": 2,
+    "view": 3000000
   },
   {
     "movieId":2,
@@ -28,7 +30,9 @@ const movies = [
     "category": "Electronics",
     "picture": "https://firebasestorage.googleapis.com/v0/b/project-conan-95b4a.appspot.com/o/shy.png?alt=media&token=5f868a45-f146-45a9-949a-b4626eab3677",
     "release_date": new Date("2023-12-18T00:00:00Z"),
-    "charaters": ["john_doe", "rating"]
+    "charaters": ["john_doe", "rating"],
+    "totalCharacter": 2,
+    "view": 3000000
   },
   {
     "movieId":3,
@@ -38,7 +42,9 @@ const movies = [
     "category": "Furniture",
     "picture": "https://firebasestorage.googleapis.com/v0/b/project-conan-95b4a.appspot.com/o/shy.png?alt=media&token=5f868a45-f146-45a9-949a-b4626eab3677",
     "release_date": new Date("2023-12-18T00:00:00Z"),
-    "charaters": ["john_doe", "rating"]
+    "charaters": ["john_doe", "rating"],
+    "totalCharacter": 2,
+    "view": 3000000
   },
   {
     "movieId":4,
@@ -48,7 +54,9 @@ const movies = [
     "category": "Sportswear",
     "picture": "https://firebasestorage.googleapis.com/v0/b/project-conan-95b4a.appspot.com/o/shy.png?alt=media&token=5f868a45-f146-45a9-949a-b4626eab3677",
     "release_date": new Date("2023-12-18T00:00:00Z"),
-    "charaters":  ["john_doe", "rating"]
+    "charaters":  ["john_doe", "rating"],
+    "totalCharacter": 2,
+    "view": 3000000
   },
   {
     "movieId":5,
@@ -58,7 +66,9 @@ const movies = [
     "category": "Electronics",
     "picture": "https://firebasestorage.googleapis.com/v0/b/project-conan-95b4a.appspot.com/o/shy.png?alt=media&token=5f868a45-f146-45a9-949a-b4626eab3677",
     "release_date": new Date("2023-12-18T00:00:00Z"),
-    "charaters": ["john_doe", "rating"]
+    "charaters": ["john_doe", "rating"],
+    "totalCharacter": 2,
+    "view": 3000000
   }
 ]
  

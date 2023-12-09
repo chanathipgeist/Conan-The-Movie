@@ -17,43 +17,48 @@ const characters = [
     "age": 699.99,
     "gender": "Electronics",
     "picture": "https://firebasestorage.googleapis.com/v0/b/project-conan-95b4a.appspot.com/o/shy.png?alt=media&token=5f868a45-f146-45a9-949a-b4626eab3677",
-    "dob": new Date("2023-12-18T00:00:00Z")
+    "dob": new Date("2023-12-18T00:00:00Z"),
+    "isGood": true
   },
   {
     "charaterId":2,
-    "firstname": "Laptop Pro",
+    "name": "Laptop Pro",
     "description": "High-performance laptop for work and entertainment.",
     "age": 1299.99,
     "gender": "Electronics",
     "picture": "https://firebasestorage.googleapis.com/v0/b/project-conan-95b4a.appspot.com/o/shy.png?alt=media&token=5f868a45-f146-45a9-949a-b4626eab3677",
-    "dob": new Date("2023-12-18T00:00:00Z")
+    "dob": new Date("2023-12-18T00:00:00Z"),
+    "isGood": true
   },
   {
     "charaterId":3,
-    "firstname": "ปริษนา พ่อมดคนสุดท้ายแห่งศตวรรต",
+    "name": "ปริษนา พ่อมดคนสุดท้ายแห่งศตวรรต",
     "description": "A stylish and comfortable sofa for your living room.",
     "age": 499.99,
     "gender": "Furniture",
     "picture": "https://firebasestorage.googleapis.com/v0/b/project-conan-95b4a.appspot.com/o/shy.png?alt=media&token=5f868a45-f146-45a9-949a-b4626eab3677",
-    "dob": new Date("2023-12-18T00:00:00Z")
+    "dob": new Date("2023-12-18T00:00:00Z"),
+    "isGood": true
   },
   {
     "charaterId":4,
-    "firstname": "Running Shoes",
+    "name": "Running Shoes",
     "description": "Durable and comfortable running shoes for fitness enthusiasts.",
     "age": 89.99,
     "gender": "Sportswear",
     "picture": "https://firebasestorage.googleapis.com/v0/b/project-conan-95b4a.appspot.com/o/shy.png?alt=media&token=5f868a45-f146-45a9-949a-b4626eab3677",
-    "dob": new Date("2023-12-18T00:00:00Z")
+    "dob": new Date("2023-12-18T00:00:00Z"),
+    "isGood": true
   },
   {
     "charaterId":5,
-    "firstname": "HD Smart TV",
+    "name": "HD Smart TV",
     "description": "Immersive entertainment with high-definition smart TV.",
     "age": 899.99,
     "gender": "Electronics",
     "picture": "https://firebasestorage.googleapis.com/v0/b/project-conan-95b4a.appspot.com/o/shy.png?alt=media&token=5f868a45-f146-45a9-949a-b4626eab3677",
-    "dob": new Date("2023-12-18T00:00:00Z")
+    "dob": new Date("2023-12-18T00:00:00Z"),
+    "isGood": true
   }
 ]
  

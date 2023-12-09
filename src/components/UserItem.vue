@@ -15,7 +15,6 @@ defineProps({
   <h2>{{ title }}</h2>
   <ol>
     <li v-for="(doc, index) in data" :key="doc.id">{{ doc.name }} 
-     <img :src="doc.picture ">  
     </li>
   </ol>
 </template>

@@ -23,7 +23,7 @@ const users = [
   },
   {
     "userId":2,
-    "firstname": "Laptop Pro",
+    "name": "Laptop Pro",
     "age": 1299.99,
     "gender": "Electronics",
     "address": [{"country": "olivia_lee", "province": "Bangkok","pose_code":"10140"}],
@@ -34,7 +34,7 @@ const users = [
   },
   {
     "userId":3,
-    "firstname": "ปริษนา พ่อมดคนสุดท้ายแห่งศตวรรต",
+    "name": "ปริษนา พ่อมดคนสุดท้ายแห่งศตวรรต",
     "age": 499.99,
     "gender": "Furniture",
     "address": [{"country": "olivia_lee", "province": "Bangkok","pose_code":"10140"}],
@@ -45,7 +45,7 @@ const users = [
   },
   {
     "userId":4,
-    "firstname": "Running Shoes",
+    "name": "Running Shoes",
     "age": 89.99,
     "gender": "Sportswear",
     "address": [{"country": "olivia_lee", "province": "Bangkok","pose_code":"10140"}],
@@ -56,7 +56,7 @@ const users = [
   },
   {
     "userId":5,
-    "firstname": "HD Smart TV",
+    "name": "HD Smart TV",
     "age": 899.99,
     "gender": "Electronics",
     "address": [{"country": "olivia_lee", "province": "Bangkok","pose_code":"10140"}],
