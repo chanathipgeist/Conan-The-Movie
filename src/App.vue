@@ -5,25 +5,50 @@ import NavBar from './components/NavBar.vue'
 
 <template>
   <div id="header">
-    <h2>Reports</h2>
-    <RouterLink to="/query/1">To show all conan the movies.</RouterLink>
-    <RouterLink to="/query/2">To show conan the movies that stars more than 7.12 scores. </RouterLink>
-    <RouterLink to="/query/3">To show conan the movies that have actor/actress(totalCharacters) more than 5.</RouterLink>
-    <RouterLink to="/query/4">To show users who like charactor name "Akai Shuichi".</RouterLink>
-    <RouterLink to="/query/5">To show users who age more than 17 and like conan the movies 7.</RouterLink>
-    <RouterLink to="/query/6">To show characters who is a male.</RouterLink>
-    <RouterLink to="/query/7">To show characters who is a good.</RouterLink>
-    <RouterLink to="/query/8">To show the average score of conan the movies that contains drama in category.</RouterLink>
-    <RouterLink to="/query/9">To count user who like charactor name "Kudo Shinichi".</RouterLink>
-    <RouterLink to="/query/10">To sum the total views since conan the movie 1 - present.</RouterLink>
+    <h2 class="text-2xl font-bold mb-4 text-white">For Query</h2>
+    <nav>
+      <RouterLink to="/query/1" class="link">Show all Conan the movies</RouterLink>
+      <RouterLink to="/query/2" class="link">Show Conan the movies with scores > 7.12</RouterLink>
+      <RouterLink to="/query/3" class="link">Show Conan the movies with > 2 characters</RouterLink>
+      <RouterLink to="/query/4" class="link">Show users who like "Akai Shuichi"</RouterLink>
+      <RouterLink to="/query/5" class="link">Show users age > 17 who like movie 01</RouterLink>
+      <RouterLink to="/query/6" class="link">Show male characters</RouterLink>
+      <RouterLink to="/query/7" class="link">Show good characters</RouterLink>
+      <RouterLink to="/query/8" class="link">Show average score of drama movies</RouterLink>
+      <RouterLink to="/query/9" class="link">Count users who like "Kudo Shinichi"</RouterLink>
+      <RouterLink to="/query/10" class="link">Sum total views of movies 1-15</RouterLink>
+    </nav>
   </div>
-  <div id="detail">
+  <div id="detail" class="mt-8">
     <RouterView />
   </div>
 </template>
 
 <style scoped>
-a {
+a.link {
   display: block;
+  padding: 10px ;
+  padding-left: 30px ;  
+  color: #ffffff;
+  transition: background-color 0.3s;
+}
+
+a.link:hover {
+  background-color: #020916;
+}
+#header{
+  /* background-image: url('https://firebasestorage.googleapis.com/v0/b/project-conan-95b4a.appspot.com/o/bg.jpg?alt=media&token=cb9dc52f-4f1f-46f3-9e45-c1ec54bd8c49'); */
+  background-color: #334f80;
+  background-size: cover;
+  background-position: center;
+  padding: 16px;
+  border-radius: 8px;
+  opacity: 0.9;}
+#detail {
+  background-size: cover;
+  background-position: center;
+  padding: 16px;
+  border-radius: 8px;
+  opacity: 0.9;
 }
 </style>

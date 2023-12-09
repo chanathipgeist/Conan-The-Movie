@@ -27,32 +27,32 @@ async function getQuery() {
   if (qryId == 1) {
     title.value = "To show all conan the movies.";
     const queryRef = collection(db, "movies");
-    qry = query(queryRef);
+    qry = query(queryRef,orderBy("movieId","asc"));
     loadComponent.value="Movies"
 
 
   } else if (qryId == 2) {
     title.value = "To show conan the movies that stars more than 7.12 scores.";
     const queryRef = collection(db, "movies");
-    qry = query(queryRef, where("stars", ">", 7.12));   
+    qry = query(queryRef, where("stars", ">", 7.12), orderBy("stars", "asc"), orderBy("movieId", "asc"));
     loadComponent.value="Movies"
 
   } else if (qryId == 3) {
     title.value = "To show conan the movies that have actor/actress(totalCharacters) more than 2.";
     const queryRef = collection(db, "movies");
-    qry = query(queryRef, where("totalCharacter", ">", 2));   
+    qry = query(queryRef, where("totalCharacter", ">", 2), orderBy("totalCharacter", "asc"), orderBy("movieId", "asc"));   
     loadComponent.value="Movies"
 
   } else if (qryId == 4) {
-    title.value = "To show users who like charactor name 'Shuichi Akai'.";
+    title.value = "To show users who like character name 'Shuichi Akai'.";
     const queryRef = collection(db, "users");
     qry = query(queryRef,where("favoriteCharacters","array-contains","Shuichi Akai"));
-    loadComponent.value="Movies"
+    loadComponent.value="Users"
 
   } else if (qryId == 5) {
-    title.value = "To show users who age more than 17 and like conan the movies 1.";
+    title.value = "To show users who age more than 17 and like conan the movies 01.";
     const queryRef = collection(db, "users");
-    qry = query(queryRef,where("age", ">", 17), where("favoriteMovies","array-contains","Conan The Movie 1"));
+    qry = query(queryRef,where("age", ">", 17), where("favoriteMovies","array-contains","Conan The Movie 01"));
     loadComponent.value="Users"
 
   } else if (qryId == 6) {
@@ -86,7 +86,7 @@ async function getQuery() {
     loadComponent.value="Aggreates"
 
   }else if (qryId == 10) {
-    title.value = "To sum the total views since conan the movie 1 - present.";
+    title.value = "To sum the total views since conan the movie 1 - 15.";
     const queryRef = collection(db, "movies");
     qry = query(queryRef);
     const snapshot = await getAggregateFromServer(qry,{
@@ -113,6 +113,13 @@ async function getQuery() {
   });
 }
 
+const formatDate = (dateString) => {
+  const options = { year: 'numeric', month: 'long', day: 'numeric' };
+  return new Date(dateString).toLocaleDateString(undefined, options);
+};
+const formatNumber = (number) => {
+  return number.toLocaleString(); 
+};
 watch(() => route.params.id, getQuery);
 
 onMounted(() => {
@@ -123,7 +130,10 @@ onMounted(() => {
   <MovieItem :title="title" :data="movies" v-if="loadComponent=='Movies'" />
   <CharacterItem :title="title" :data="characters" v-if="loadComponent=='Characters'" />
   <UserItem :title="title" :data="users" v-if="loadComponent=='Users'" />
-  <div  v-if="loadComponent=='Aggreates'" >{{ count }}</div>
+  <div v-if="loadComponent === 'Aggreates'" class="flex flex-col items-center">
+    <h2 class="text-2xl font-bold m-10 ">{{ title }}</h2>
+    <div class="text-4xl font-bold">{{ formatNumber(count) }} </div>
+  </div>
   <!-- <Aggreate :title="title" :data="count" v-if="loadComponent=='Aggreates'" /> -->
 </template>
 
